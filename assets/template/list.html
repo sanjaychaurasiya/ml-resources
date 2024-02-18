@@ -1,0 +1,82 @@
+{% block content %}
+
+    <h2><b>Machine Learning:</b></h2>
+    
+    <p><b>Linear Regression:</b></p>
+    <ul>
+        <li>
+            <p>Simple Linear Regression</p>
+        </li>
+        <li>
+            <p>Multiple Linear Regression</p>
+        </li>
+        <li>
+            <p>Polynomial Regression</p>
+        </li>
+        <li>
+            <p>Support Vector Regression</p>
+        </li>
+        <li>
+            <p>Decision Tree Regression</p>
+        </li>
+        <li>
+            <p>Random Forest Regression</p>
+        </li>
+    </ul>
+
+    <p><b>Classification:</b></p>
+    <ul>
+        <li>
+            <p>Simple Linear Regression</p>
+        </li>
+        <li>
+            <p>Multiple Linear Regression</p>
+        </li>
+        <li>
+            <p>Polynomial Regression</p>
+        </li>
+        <li>
+            <p>Support Vector Regression</p>
+        </li>
+        <li>
+            <p>Decision Tree Regression</p>
+        </li>
+        <li>
+            <p>Random Forest Regression</p>
+        </li>
+    </ul>
+
+    <p><b>Clustering:</b></p>
+    <ul>
+        <li>
+            <p>K-Means Clustering</p>
+        </li>
+        <li>
+            <p>Hierarchical Clustering</p>
+        </li>
+    </ul>
+
+    <p><b>Dimensionality Reduction:</b></p>
+    <ul>
+        <li>
+            <p>K-Means Clustering</p>
+        </li>
+        <li>
+            <p>Hierarchical Clustering</p>
+        </li>
+    </ul>
+    
+    
+    <h2><b>Machine Learning:</b></h2>
+    <ul>
+        {% for file in file_names %}
+            <li>
+                <a href="{% url 'notebook_detail' file_name %}">{{ file_name }}</a>
+            </li>
+            <li>
+                <a href=""></a>
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock content %}
